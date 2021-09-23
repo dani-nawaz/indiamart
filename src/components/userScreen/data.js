@@ -1,0 +1,20 @@
+export const data = [
+  {
+    id: 1,
+    name: 'Dani',
+    userName: 'daninawaz ',
+    experties: 'Web Developer',
+    noOfJobs: '',
+    onBudget: '',
+    onTime: '',
+    repeatHireRate: '',
+    bio: "I'm react developer who is working for about one and half year. In this period i have developed dozens of websites. I can provide you with cheapest rate possible and quality work.",
+    country: '',
+    city: '',
+    time: '',
+    joinedData: '',
+    Recomendataion: '',
+    stars: 4.2,
+    reviews: 11,
+  },
+]

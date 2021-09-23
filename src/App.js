@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { AccountBox } from './components/accountBox'
+import { PostCom } from './components/post'
+import { UserScreen } from './components/userScreen'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Route path='/user' component={UserScreen} />
+      <Route path='/post' component={PostCom} />
+      <Route path='/login' component={AccountBox} />
+      <Route path='/login' component={DashBoard} />
+    </Router>
+  )
 }
 
-export default App;
+export default App
