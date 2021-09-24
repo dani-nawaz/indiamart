@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { DataGrid } from '@mui/x-data-grid';
 
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
 import { rows } from '../../dummyData'
@@ -67,13 +68,13 @@ const UserList = () => {
 
   return (
     <Wrapper>
-      {/* <DataGrid
+      <DataGrid
         rows={data}
         disableSelectionOnClick
         columns={columns}
         pageSize={8}
         checkboxSelection
-      /> */}
+      />
     </Wrapper>
   )
 }

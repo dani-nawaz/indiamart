@@ -19,7 +19,7 @@ const BoxContainer = styled.div`
 const MainSection = styled.section`
   width: 100vw !important;
   height: 100vh;
-  background-color: #073c56;
+  /* background-color: #073c56; */
   margin: 0 auto;
   display: flex;
   align-items: center;
