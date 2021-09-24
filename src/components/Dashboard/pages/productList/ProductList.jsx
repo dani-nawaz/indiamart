@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { DataGrid } from '@material-ui/data-grid'
-import { pRows } from '../../DummyData'
-import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline'
+import { pRows } from '../../dummyData'
+// import { DataGrid } from '@material-ui/data-grid'
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
 import { Link } from 'react-router-dom'
 const ProductList = () => {
   const [data, setData] = useState(pRows)
@@ -63,13 +63,13 @@ const ProductList = () => {
   ]
   return (
     <Wrapper>
-      <DataGrid
+      {/* <DataGrid
         rows={data}
         disableSelectionOnClick
         columns={columns}
         pageSize={8}
         checkboxSelection
-      />
+      /> */}
     </Wrapper>
   )
 }

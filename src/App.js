@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { AccountBox } from './components/accountBox'
+import DashBoard from './components/Dashboard'
 import { PostCom } from './components/post'
 import { UserScreen } from './components/userScreen'
 
@@ -9,7 +10,7 @@ function App() {
       <Route path='/user' component={UserScreen} />
       <Route path='/post' component={PostCom} />
       <Route path='/login' component={AccountBox} />
-      <Route path='/login' component={DashBoard} />
+      <Route path='/dashboard' component={DashBoard} />
     </Router>
   )
 }

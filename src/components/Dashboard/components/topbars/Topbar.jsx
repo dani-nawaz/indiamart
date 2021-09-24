@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone'
-import LanguageIcon from '@material-ui/icons/Language'
-import SettingsIcon from '@material-ui/icons/Settings'
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone'
+import LanguageIcon from '@mui/icons-material/Language'
+import SettingsIcon from '@mui/icons-material/Settings'
 const Topbar = () => {
   return (
     <Wrapper className='topbar'>

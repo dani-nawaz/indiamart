@@ -1,11 +1,20 @@
 import styled from 'styled-components'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Topbar } from './components/index'
-function App() {
+import {
+  NewProduct,
+  NewUser,
+  Product,
+  ProductList,
+  User,
+  UserList,
+  Home,
+} from './pages'
+import { Sidebar, Topbars } from './components'
+function DashBoard() {
   return (
     <Router>
       <Wrapper>
-        <Topbar />
+        <Topbars />
         <div className='container'>
           <Sidebar />
           <Switch>
@@ -37,7 +46,7 @@ function App() {
   )
 }
 
-export default App
+export default DashBoard
 const Wrapper = styled.section`
   .container {
     display: flex;

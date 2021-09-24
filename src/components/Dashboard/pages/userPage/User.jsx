@@ -1,19 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import {
-  CalendarToday,
-  LocationSearching,
-  MailOutline,
-  PermIdentity,
-  PhoneAndroid,
-  Publish,
-} from '@material-ui/icons'
-import FormHelperText from '@material-ui/core/FormHelperText'
-import FormControl from '@material-ui/core/FormControl'
-import { Input } from '@material-ui/core'
-// or
-import InputLabel from '@material-ui/core/InputLabel'
+import AddLocationIcon from '@mui/icons-material/AddLocation'
+import PublishIcon from '@mui/icons-material/Publish'
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid'
+import PermIdentityIcon from '@mui/icons-material/PermIdentity'
+
 const User = () => {
   return (
     <Wrapper>
@@ -39,25 +33,25 @@ const User = () => {
           <div className='userShowBottom'>
             <span className='userShowTitle'>Account Detail</span>
             <div className='userShowInfo'>
-              <PermIdentity className='userShowIcon' />
+              <PermIdentityIcon className='userShowIcon' />
               <span className='userShowInfoTitle'>annabecker99</span>
             </div>
 
             <span className='userShowTitle'>Contact Detail</span>
             <div className='userShowInfo'>
-              <CalendarToday className='userShowIcon' />
+              <CalendarTodayIcon className='userShowIcon' />
               <span className='userShowInfoTitle'>10.12.1999</span>
             </div>
             <div className='userShowInfo'>
-              <PhoneAndroid className='userShowIcon' />
+              <PhoneAndroidIcon className='userShowIcon' />
               <span className='userShowInfoTitle'>+9 999 999 99</span>
             </div>
             <div className='userShowInfo'>
-              <MailOutline className='userShowIcon' />
+              <MailOutlineIcon className='userShowIcon' />
               <span className='userShowInfoTitle'>annabecker99@email.com</span>
             </div>
             <div className='userShowInfo'>
-              <LocationSearching className='userShowIcon' />
+              <AddLocationIcon className='userShowIcon' />
               <span className='userShowInfoTitle'>BWp</span>
             </div>
           </div>
@@ -115,7 +109,7 @@ const User = () => {
                   alt=''
                 />
                 <label htmlFor='file'>
-                  <Publish className='icon' />
+                  <PublishIcon className='icon' />
                 </label>
                 <input
                   type='file'

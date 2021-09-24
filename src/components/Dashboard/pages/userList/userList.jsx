@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { DataGrid } from '@material-ui/data-grid'
-import { rows } from '../../DummyData'
-import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline'
+
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
+import { rows } from '../../dummyData'
+
 import { Link } from 'react-router-dom'
 
 const UserList = () => {
@@ -66,13 +67,13 @@ const UserList = () => {
 
   return (
     <Wrapper>
-      <DataGrid
+      {/* <DataGrid
         rows={data}
         disableSelectionOnClick
         columns={columns}
         pageSize={8}
         checkboxSelection
-      />
+      /> */}
     </Wrapper>
   )
 }

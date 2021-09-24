@@ -1,15 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import FeaturedInf from '../../components/featuredInfo/FeaturedInf'
-import Charts from '../../components/charts/Charts'
-import { data } from '../../DummyData'
-import WidgetSmall from '../../components/WidgetSm/WidgetSmall'
-import WidgetLg from '../../components/widgetLg/WidgetLg'
+import { Charts, FeaturedInfo, WidgetSmall, WidgetLg } from '../../components'
+import { data } from '../../dummyData'
 
 const Home = () => {
   return (
     <Wrapper>
-      <FeaturedInf />
+      <FeaturedInfo />
       <Charts
         data={data}
         dataKey={'Active User'}

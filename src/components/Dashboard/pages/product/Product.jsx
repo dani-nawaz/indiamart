@@ -1,9 +1,9 @@
-import { Publish } from '@material-ui/icons'
+import PublishIcon from '@mui/icons-material/Publish'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Charts from '../../components/charts/Charts'
-import { productData } from '../../DummyData'
+import { Charts } from '../../components'
+import { productData } from '../../dummyData'
 const Product = () => {
   return (
     <Wrapper>
@@ -70,7 +70,7 @@ const Product = () => {
                 className='productUploadImg'
               />
               <label for='file'>
-                <Publish />
+                <PublishIcon />
               </label>
               <input type='file' id='file' style={{ display: 'none' }} />
             </div>

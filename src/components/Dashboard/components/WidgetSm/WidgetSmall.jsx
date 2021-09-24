@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import VisibilityIcon from '@material-ui/icons/Visibility'
+import VisibilityIcon from '@mui/icons-material/Visibility'
 
 const WidgetSmall = () => {
   return (
