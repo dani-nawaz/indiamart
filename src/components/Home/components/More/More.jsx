@@ -16,9 +16,10 @@ const Wrapper = styled.section`
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
   }
+
   .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 
     align-items: center;
     justify-content: center;
@@ -26,6 +27,25 @@ const Wrapper = styled.section`
     /* display: flex; */
     /* flex-wrap: wrap; */
   }
+  @media screen and (min-width: 739px) {
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (min-width: 999px) {
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
   .wrapper {
     position: relative;
   }
