@@ -6,7 +6,6 @@ import {
   ResponsiveContainer,
   XAxis,
   Tooltip,
-  Legend,
 } from 'recharts'
 import styled from 'styled-components'
 
