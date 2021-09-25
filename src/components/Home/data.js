@@ -71,7 +71,7 @@ export const card = [
     title: 'Pay with Bcator',
     url: '#',
     icon: <FaWallet />,
-    desc: 'Protect your payments for FREE. Pay sellers online via multiple options',
+    desc: 'Protects your payments for FREE. Pay sellers online via multiple options',
   },
   {
     id: 3,
