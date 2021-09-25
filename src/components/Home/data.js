@@ -78,7 +78,7 @@ export const card = [
     title: 'Sell on IndiaMART for free',
     url: '#',
     icon: <FaDollarSign />,
-    desc: 'Reach out to more than 4 crore buyers.Sell with us.',
+    desc: 'Reach out to more than 4 crore buyers.Sell with us.and earn',
   },
 ]
 
