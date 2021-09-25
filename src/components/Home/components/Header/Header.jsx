@@ -59,7 +59,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }))
 
-export default function Header() {
+export default function Header({ history }) {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null)
   const isMenuOpen = Boolean(anchorEl)
@@ -76,6 +76,7 @@ export default function Header() {
   const handleMenuClose = () => {
     setAnchorEl(null)
     handleMobileMenuClose()
+    history.push('/login')
   }
 
   const handleMobileMenuOpen = (event) => {
