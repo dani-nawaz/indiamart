@@ -8,11 +8,13 @@ import Banner from '../Banner/Banner'
 import Footer from '../Footer/Footer'
 import More from '../More/More'
 import { Sidebar } from '../Navbar/Sidebar'
+import { Navbar } from '../Navbar/Navbar'
 const Home = () => {
   return (
     <AppProvider>
       <Header />
       <Hero />
+      <Navbar />
       <Submenu />
       <Sidebar />
       <Banner />

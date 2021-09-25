@@ -194,7 +194,6 @@ export default function Header() {
           </Search>
 
           <Box sx={{ flexGrow: 1 }} />
-          <Navbar />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton
               size='large'
