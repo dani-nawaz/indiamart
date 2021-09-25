@@ -13,11 +13,7 @@ const Home = () => {
     <AppProvider>
       <Header />
       <Hero />
-      {/* <Navbar /> */}
       <Submenu />
-
-      {/* <div className='submemu'>
-      </div>  */}
       <Sidebar />
       <Banner />
       <More />
