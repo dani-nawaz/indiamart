@@ -68,7 +68,7 @@ export const card = [
   },
   {
     id: 2,
-    title: 'Pay with IndiaMART',
+    title: 'Pay with Bcator',
     url: '#',
     icon: <FaWallet />,
     desc: 'Protect your payments for FREE. Pay sellers online via multiple options',
