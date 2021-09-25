@@ -180,10 +180,10 @@ const Footer = () => {
                 <h6>Categories</h6>
                 <ul className='footer-links'>
                   {cat.map((item) => {
-                    const { id, title } = item
+                    const { id, title, url } = item
                     return (
                       <li key={id}>
-                        <a href='#'>{title}</a>
+                        <a href={url}>{title}</a>
                       </li>
                     )
                   })}
@@ -194,10 +194,10 @@ const Footer = () => {
                 <h6>Quick Links</h6>
                 <ul className='footer-links'>
                   {quickLinks.map((link) => {
-                    const { id, title } = link
+                    const { id, title, url } = link
                     return (
                       <li key={id}>
-                        <a href='#'>{title}</a>
+                        <a href={url}>{title}</a>
                       </li>
                     )
                   })}
@@ -211,7 +211,7 @@ const Footer = () => {
               <div className='col-md-8 col-sm-6 col-xs-12'>
                 <p className='copyright-text'>
                   Copyright &copy; 2021 All Rights Reserved by{' '}
-                  <a href='#'>D&H</a>.
+                  <a href='/'>D&H</a>.
                 </p>
               </div>
 

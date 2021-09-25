@@ -73,6 +73,7 @@ export const Submenu = () => {
     if (links.length > 3) {
       setColumns('col-4')
     }
+    // eslint-disable-next-line
   }, [location, links])
   console.log(isSubmenuOpen)
   return (

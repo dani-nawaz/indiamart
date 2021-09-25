@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../Header/Header'
 import Hero from '../Hero/Hero'
-import { Navbar } from '../Navbar/Navbar'
 import '../index.css'
 import { AppProvider } from '../context'
 import { Submenu } from '../Navbar/Submenu'

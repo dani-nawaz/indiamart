@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FaBars } from 'react-icons/fa'
 import { useGlobalContext } from '../context'
 
 const Wrapper = styled.nav`
@@ -77,7 +76,7 @@ const Wrapper = styled.nav`
 `
 
 export const Navbar = () => {
-  const { openSidebar, closeSubmenu, openSubmenu } = useGlobalContext()
+  const { closeSubmenu, openSubmenu } = useGlobalContext()
   const displaySubmenu = (e) => {
     const page = e.target.textContent
     console.log(page)

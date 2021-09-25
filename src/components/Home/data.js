@@ -9,7 +9,6 @@ import {
   FaThumbsUp,
   FaDollarSign,
   FaWallet,
-  FaPhone,
 } from 'react-icons/fa'
 import React from 'react'
 const sublinks = [
@@ -39,25 +38,25 @@ const sublinks = [
   },
 ]
 export const cat = [
-  { id: 1, title: 'electronics', url: '#' },
-  { id: 2, title: 'agriculture', url: '#' },
-  { id: 3, title: 'medicnce', url: '#' },
-  { id: 4, title: 'fertilizers', url: '#' },
-  { id: 5, title: 'weeds', url: '#' },
-  { id: 6, title: 'coolers', url: '#' },
+  { id: 1, title: 'electronics', url: '/electronics' },
+  { id: 2, title: 'agriculture', url: '/agriculture' },
+  { id: 3, title: 'medicnce', url: '/medicnce' },
+  { id: 4, title: 'fertilizers', url: '/fertilizers' },
+  { id: 5, title: 'weeds', url: '/weeds' },
+  { id: 6, title: 'coolers', url: '/coolers' },
 ]
 export const quickLinks = [
-  { id: 1, title: 'about us', url: '#' },
-  { id: 2, title: 'Contact Us', url: '#' },
-  { id: 3, title: 'Contribute', url: '#' },
-  { id: 4, title: 'Privacy Policy', url: '#' },
-  { id: 5, title: 'Sitemap', url: '#' },
+  { id: 1, title: 'about us', url: '/about' },
+  { id: 2, title: 'Contact Us', url: '/contact' },
+  { id: 3, title: 'Contribute', url: '/contribute' },
+  { id: 4, title: 'Privacy Policy', url: '/privacy' },
+  { id: 5, title: 'Sitemap', url: '/sitemap' },
 ]
 export const socialLinks = [
-  { id: 1, title: 'facebook', url: '#', icon: <FaFacebookF /> },
-  { id: 2, title: 'twitter', url: '#', icon: <FaTwitter /> },
-  { id: 3, title: 'dribbble', url: '#', icon: <FaDribbble /> },
-  { id: 4, title: 'linkedin', url: '#', icon: <FaLinkedin /> },
+  { id: 1, title: 'facebook', url: 'www.facebook.com', icon: <FaFacebookF /> },
+  { id: 2, title: 'twitter', url: 'www.twiiter.com', icon: <FaTwitter /> },
+  { id: 3, title: 'dribbble', url: 'www.dribbble.com', icon: <FaDribbble /> },
+  { id: 4, title: 'linkedin', url: 'www.linkedin.com', icon: <FaLinkedin /> },
 ]
 export const card = [
   {

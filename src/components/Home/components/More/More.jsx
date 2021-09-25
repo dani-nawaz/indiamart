@@ -1,6 +1,4 @@
-import { Divider } from '@mui/material'
 import React from 'react'
-import { FaThumbsUp, FiThumbsUp } from 'react-icons/fa'
 import styled from 'styled-components'
 import { card } from '../../data'
 const Wrapper = styled.section`
