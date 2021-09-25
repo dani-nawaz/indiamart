@@ -9,6 +9,7 @@ import Footer from '../Footer/Footer'
 import More from '../More/More'
 import { Sidebar } from '../Navbar/Sidebar'
 import { Navbar } from '../Navbar/Navbar'
+import Index from '../Jumbotoron'
 const Home = () => {
   return (
     <AppProvider>
@@ -18,6 +19,7 @@ const Home = () => {
       <Submenu />
       <Sidebar />
       <Banner />
+      <Index />
       <More />
       <Footer />
     </AppProvider>
