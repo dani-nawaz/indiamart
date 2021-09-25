@@ -55,7 +55,7 @@ export const quickLinks = [
 export const socialLinks = [
   { id: 1, title: 'facebook', url: 'www.facebook.com', icon: <FaFacebookF /> },
   { id: 2, title: 'twitter', url: 'www.twiiter.com', icon: <FaTwitter /> },
-  { id: 3, title: 'dribbble', url: 'www.dribbble.com', icon: <FaDribbble /> },
+  { id: 3, title: 'dribbble', url: 'www.youtube.com', icon: <FaDribbble /> },
   { id: 4, title: 'linkedin', url: 'www.linkedin.com', icon: <FaLinkedin /> },
 ]
 export const card = [
