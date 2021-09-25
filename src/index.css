@@ -48,25 +48,6 @@ html {
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-/* body {
-  --def: #96b7c4;
-  --inv: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(-25deg, #616161 0%, #96b7c4 100%);
-}
-body {
-  background-color: var(--backgroundColor);
-   background-color: red; 
-  font-family: var(--bodyFont);
-  font-weight: 400;
-  line-height: 1.75;
-  color: var(--textColor);
-} */
 body {
   background-color: var(--backgroundColor);
   /* background-color: red; */
@@ -74,14 +55,6 @@ body {
   font-weight: 400;
   line-height: 1.75;
   color: var(--textColor);
-  --def: #96b7c4;
-  --inv: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
 }
 
 p {
@@ -350,63 +323,3 @@ ul {
 }
 
 /* ~~~~~~~ INIT. BTN ~~~~~~~ */
-
-.btns {
-  position: relative;
-  padding: 1.4rem 4.2rem;
-  padding-right: 3.1rem;
-  font-size: 1.4rem;
-  color: var(--inv);
-  letter-spacing: 1.1rem;
-  text-transform: uppercase;
-  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  cursor: pointer;
-  user-select: none;
-}
-
-.btn:before,
-.btn:after {
-  content: '';
-  position: absolute;
-  transition: inherit;
-  z-index: -1;
-}
-
-.btn:hover {
-  color: var(--def);
-  transition-delay: 0.5s;
-}
-
-.btn:hover:before {
-  transition-delay: 0s;
-}
-
-.btn:hover:after {
-  background: var(--inv);
-  transition-delay: 0.35s;
-}
-
-/* From Right */
-
-.from-right:before,
-.from-right:after {
-  top: 0;
-  width: 0;
-  height: 100%;
-}
-
-.from-right:before {
-  left: 0;
-  border: 1px solid var(--inv);
-  border-left: 0;
-  border-right: 0;
-}
-
-.from-right:after {
-  right: 0;
-}
-
-.from-right:hover:before,
-.from-right:hover:after {
-  width: 100%;
-}

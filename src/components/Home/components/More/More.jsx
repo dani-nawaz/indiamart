@@ -71,7 +71,7 @@ const More = () => {
                     <h5>{title}</h5>
                     <p className='decs'>{desc}</p>
                   </div>
-                  <div className='btns from-right'>hello</div>
+                  <div className='cardbtn from-right'>hello</div>
                 </div>
               </article>
             )
