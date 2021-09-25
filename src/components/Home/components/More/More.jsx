@@ -18,7 +18,7 @@ const Wrapper = styled.section`
   }
   .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
     align-items: center;
     justify-content: center;
@@ -34,6 +34,12 @@ const Wrapper = styled.section`
     height: 60px;
     margin: 0 auto;
     display: block;
+    margin-bottom: 1rem;
+  }
+  .icon svg {
+    fill: var(--primary);
+    width: 100%;
+    height: 100%;
   }
   h3 {
     margin: 5px 0;
@@ -64,8 +70,8 @@ const More = () => {
           {card.map((card) => {
             const { id, title, desc, icon } = card
             return (
-              <article>
-                <div className='card' key={id}>
+              <article key={id}>
+                <div className='card'>
                   <div className='wrapper'>
                     <div className='icon'>{icon}</div>
                     <h5>{title}</h5>

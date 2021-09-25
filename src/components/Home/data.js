@@ -81,13 +81,6 @@ export const card = [
     icon: <FaDollarSign />,
     desc: 'Reach out to more than 4 crore buyers.Sell with us.',
   },
-  {
-    id: 4,
-    title: 'Download our App',
-    url: '#',
-    icon: <FaPhone />,
-    desc: 'Get instant notifications on the go. Download our App Now',
-  },
 ]
 
 export default sublinks

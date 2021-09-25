@@ -7,6 +7,7 @@ const Wrapper = styled.section`
     background: #fffffe;
     box-shadow: var(--dark-shadow);
     position: absolute;
+    margin: 0 auto;
     top: 5rem;
     left: 50%;
     transform: translateX(-50%);

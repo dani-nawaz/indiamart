@@ -15,6 +15,8 @@ import AccountCircle from '@mui/icons-material/AccountCircle'
 import MailIcon from '@mui/icons-material/Mail'
 import NotificationsIcon from '@mui/icons-material/Notifications'
 import MoreIcon from '@mui/icons-material/MoreVert'
+import { useGlobalContext } from '../context'
+import { Navbar } from '../Navbar/Navbar'
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -61,7 +63,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function Header() {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null)
-
   const isMenuOpen = Boolean(anchorEl)
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl)
 
@@ -155,18 +156,32 @@ export default function Header() {
       </MenuItem>
     </Menu>
   )
+  const { openSidebar } = useGlobalContext()
 
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position='static' className='appbar'>
         <Toolbar>
+          <div className='sidebarIcon'>
+            <IconButton
+              size='large'
+              edge='start'
+              color='inherit'
+              aria-label='open drawer'
+              sx={{ mr: 2 }}
+              onClick={openSidebar}
+            >
+              <MenuIcon />
+            </IconButton>
+          </div>
+
           <Typography
             variant='h6'
             noWrap
             component='div'
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            Mart
+            BCator
           </Typography>
           <Search className='leftIcon'>
             <SearchIconWrapper>
@@ -179,6 +194,7 @@ export default function Header() {
           </Search>
 
           <Box sx={{ flexGrow: 1 }} />
+          <Navbar />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton
               size='large'

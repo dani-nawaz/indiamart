@@ -167,10 +167,10 @@ const Footer = () => {
               <div className='col-sm-12 col-md-6'>
                 <h6>About</h6>
                 <p className='text-justify'>
-                  IndiaMART InterMESH Ltd. is an Indian e-commerce company that
+                  Bcator InterMESH Ltd. is an Indian e-commerce company that
                   provides B2B and customer to customer sales services via its
                   web portal. The group began in 1996 when Dinesh Agarwal and
-                  Brijesh Agrawal founded the website IndiaMART.com, a
+                  Brijesh Agrawal founded the website Bcator.com, a
                   business-to-business portal to connect Indian manufacturers
                   with buyers.
                 </p>
@@ -216,7 +216,7 @@ const Footer = () => {
               </div>
 
               <div className='col-md-4 col-sm-6 col-xs-12'>
-                <ul class='social-icons'>
+                <ul className='social-icons'>
                   {socialLinks.map((link) => {
                     const { id, title, url, icon } = link
                     return (

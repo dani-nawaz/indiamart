@@ -8,13 +8,18 @@ import { Submenu } from '../Navbar/Submenu'
 import Banner from '../Banner/Banner'
 import Footer from '../Footer/Footer'
 import More from '../More/More'
+import { Sidebar } from '../Navbar/Sidebar'
 const Home = () => {
   return (
     <AppProvider>
       <Header />
       <Hero />
-      <Navbar />
+      {/* <Navbar /> */}
       <Submenu />
+
+      {/* <div className='submemu'>
+      </div>  */}
+      <Sidebar />
       <Banner />
       <More />
       <Footer />

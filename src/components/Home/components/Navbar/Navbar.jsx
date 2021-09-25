@@ -4,13 +4,23 @@ import { FaBars } from 'react-icons/fa'
 import { useGlobalContext } from '../context'
 
 const Wrapper = styled.nav`
-  height: 5rem;
+  /* height: 5rem; */
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #073c56;
   position: relative;
   z-index: 1;
+  /* .nav {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #073c56;
+    position: relative;
+    z-index: 1;
+  } */
+
   .nav-center {
     width: 90vw;
     max-width: var(--max-width);
@@ -41,16 +51,17 @@ const Wrapper = styled.nav`
     .nav-links {
       display: block;
       justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      display: flex;
+      /* grid-template-columns: 1fr 1fr 1fr; */
       text-align: center;
       height: 100%;
       margin-top: 1rem;
-      display: grid;
+      /* display: grid; */
       align-items: center;
     }
     .nav-links li {
       height: 100%;
+      /* width: 100%; */
     }
     .link-btn {
       height: 100%;
