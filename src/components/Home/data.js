@@ -75,7 +75,7 @@ export const card = [
   },
   {
     id: 3,
-    title: 'Sell on IndiaMART for free',
+    title: 'Sell on Bcator for free',
     url: '#',
     icon: <FaDollarSign />,
     desc: 'Reach out to more than 4 crore buyers.Sell with us.and earn',
