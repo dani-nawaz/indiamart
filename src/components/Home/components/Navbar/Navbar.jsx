@@ -4,13 +4,13 @@ import { useGlobalContext } from '../context'
 
 const Wrapper = styled.nav`
   /* height: 5rem; */
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   background-color: #073c56;
   position: relative;
-  z-index: 1;
-  /* .nav {
+  z-index: 1; */
+  .nav {
     height: 5rem;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ const Wrapper = styled.nav`
     background-color: #073c56;
     position: relative;
     z-index: 1;
-  } */
+  }
 
   .nav-center {
     width: 90vw;
@@ -41,6 +41,7 @@ const Wrapper = styled.nav`
 
       align-items: center;
     }
+
     .toggle-btn {
       display: none;
     }
@@ -62,6 +63,7 @@ const Wrapper = styled.nav`
       height: 100%;
       /* width: 100%; */
     }
+
     .link-btn {
       height: 100%;
       background: transparent;
@@ -93,24 +95,26 @@ export const Navbar = () => {
   }
   return (
     <Wrapper>
-      <div className='nav-center' onMouseOver={handleSubmenu}>
-        <ul className='nav-links'>
-          <li>
-            <button className='link-btn' onMouseOver={displaySubmenu}>
-              drugs and pharma
-            </button>
-          </li>
-          <li>
-            <button className='link-btn' onMouseOver={displaySubmenu}>
-              agriculture
-            </button>
-          </li>
-          <li>
-            <button className='link-btn' onMouseOver={displaySubmenu}>
-              electronics
-            </button>
-          </li>
-        </ul>
+      <div className='nav'>
+        <div className='nav-center' onMouseOver={handleSubmenu}>
+          <ul className='nav-links'>
+            <li>
+              <button className='link-btn' onMouseOver={displaySubmenu}>
+                drugs and pharma
+              </button>
+            </li>
+            <li>
+              <button className='link-btn' onMouseOver={displaySubmenu}>
+                agriculture
+              </button>
+            </li>
+            <li>
+              <button className='link-btn' onMouseOver={displaySubmenu}>
+                electronics
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </Wrapper>
   )

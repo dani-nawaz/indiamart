@@ -15,7 +15,7 @@ const Wrapper = styled.section`
     display: none;
     padding: 2rem;
     border-radius: 20px;
-    transition: var(--transition);
+    transition: all 250ms ease-in;
   }
 
   .submenu.show {
