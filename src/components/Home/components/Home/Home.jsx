@@ -10,6 +10,7 @@ import More from '../More/More'
 import { Sidebar } from '../Navbar/Sidebar'
 import { Navbar } from '../Navbar/Navbar'
 import Index from '../Jumbotoron'
+import Services from '../services/Services'
 const Home = () => {
   return (
     <AppProvider>
@@ -20,6 +21,7 @@ const Home = () => {
       <Sidebar />
       <Banner />
       <Index />
+      <Services />
       <More />
       <Footer />
     </AppProvider>

@@ -23,6 +23,8 @@ html {
   --darkHeading: #000000;
   --button: #eebbc3;
   --primary: #5e8c61;
+  --green-shade: #72bda3;
+  --clr-red-light: hsl(360, 71%, 66%);
 
   /* fonts  */
   --headingFont: 'Roboto', sans-serif;
@@ -138,6 +140,9 @@ ul {
 .button:hover {
   box-shadow: var(--shadow-3);
   background-color: #d4939d;
+}
+.page {
+  min-height: calc(100vh - (20vh + 10rem));
 }
 .btn {
   cursor: pointer;
