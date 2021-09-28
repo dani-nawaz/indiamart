@@ -78,40 +78,19 @@ const Wrapper = styled.nav`
 `
 
 export const Navbar = () => {
-  const { closeSubmenu, openSubmenu } = useGlobalContext()
-  const displaySubmenu = (e) => {
-    const page = e.target.textContent
-    console.log(page)
-    const tempBtn = e.target.getBoundingClientRect()
-    const center = (tempBtn.left + tempBtn.right) / 2
-    const bottom = tempBtn.bottom - 3
-
-    openSubmenu(page, { center, bottom })
-  }
-  const handleSubmenu = (e) => {
-    if (!e.target.classList.contains('link-btn')) {
-      closeSubmenu()
-    }
-  }
   return (
     <Wrapper>
       <div className='nav'>
-        <div className='nav-center' onMouseOver={handleSubmenu}>
+        <div className='nav-center'>
           <ul className='nav-links'>
             <li>
-              <button className='link-btn' onMouseOver={displaySubmenu}>
-                drugs and pharma
-              </button>
+              <button className='Navbtn from-top'>drugs and pharma</button>
             </li>
             <li>
-              <button className='link-btn' onMouseOver={displaySubmenu}>
-                agriculture
-              </button>
+              <button className='Navbtn from-top'>agriculture</button>
             </li>
             <li>
-              <button className='link-btn' onMouseOver={displaySubmenu}>
-                electronics
-              </button>
+              <button className='Navbtn from-top'>electronics</button>
             </li>
           </ul>
         </div>
