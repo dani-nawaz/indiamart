@@ -13,6 +13,7 @@ const Index = () => {
               top
               <span className='subtitle'>categories</span>
             </div>
+            <div className='underline'></div>
           </div>
           {jumboData.map((item) => {
             console.log(item)

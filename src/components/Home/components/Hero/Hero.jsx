@@ -14,8 +14,7 @@ const Wrapper = styled.section`
   overflow: hidden;
 `
 const Hero = () => {
-  const { closeSubmenu } = useGlobalContext()
-  return <Wrapper onMouseOver={closeSubmenu}></Wrapper>
+  return <Wrapper></Wrapper>
 }
 
 export default Hero

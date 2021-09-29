@@ -4,6 +4,7 @@ import Filters from './components/Filters'
 import ProductList from './components/ProductList'
 import PageHero from './components/PageHero'
 import Sort from './components/Sort'
+import { useFilterContext } from '../../context/FilterContext'
 const Wrapper = styled.section`
   .products {
     display: grid;
@@ -23,6 +24,11 @@ const Wrapper = styled.section`
   }
 `
 const ProductsPage = () => {
+  const { loading } = useFilterContext()
+
+  if (loading === true) {
+    return <h1>Loading...</h1>
+  }
   return (
     <main>
       <PageHero title='products' />

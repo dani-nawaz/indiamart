@@ -11,6 +11,7 @@ import { Sidebar } from '../Navbar/Sidebar'
 import { Navbar } from '../Navbar/Navbar'
 import Index from '../Jumbotoron'
 import Services from '../services/Services'
+import FeaturedProducts from '../FeaturedProducts/FeaturedProducts'
 const Home = () => {
   return (
     <AppProvider>
@@ -19,7 +20,9 @@ const Home = () => {
       <Navbar />
       <Submenu />
       <Sidebar />
+
       <Banner />
+      <FeaturedProducts />
       <Index />
       <Services />
       <More />

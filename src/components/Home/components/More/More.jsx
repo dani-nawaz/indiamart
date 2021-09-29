@@ -81,6 +81,7 @@ const More = () => {
         <div className='title'>
           more
           <span className='subtitle'>Info</span>
+          <div className='underline'></div>
         </div>
       </div>
       <div className='section__center center'>

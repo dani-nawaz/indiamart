@@ -4,6 +4,7 @@ import GridViewIcon from '@mui/icons-material/GridView'
 import ViewListIcon from '@mui/icons-material/ViewList'
 import FormControl from '@mui/material/FormControl'
 import { IconButton, InputLabel, MenuItem, Select } from '@mui/material'
+import { useFilterContext } from '../../../context/FilterContext'
 const Wrapper = styled.section`
   display: grid;
   grid-template-columns: auto auto 1fr auto;
@@ -43,17 +44,33 @@ const Wrapper = styled.section`
   }
 `
 const Sort = () => {
+  const {
+    filtered_products: products,
+    grid_view,
+    setGridView,
+    setListView,
+    updateSort,
+    sort,
+  } = useFilterContext()
   return (
     <Wrapper>
       <div className='btn-container'>
-        <IconButton color='success' className='active'>
+        <IconButton
+          onClick={setGridView}
+          color='success'
+          className={`${grid_view ? 'active' : null}`}
+        >
           <GridViewIcon />
         </IconButton>
-        <IconButton color='success'>
+        <IconButton
+          color='success'
+          onClick={setListView}
+          className={`${!grid_view ? 'active' : null}`}
+        >
           <ViewListIcon />
         </IconButton>
       </div>
-      <p>{/* {products.length} */}0 products found</p>
+      {/* <p>{products.length} products found</p> */}
       <hr />
       <FormControl sx={{ minWidth: 120 }}>
         <InputLabel id='demo-simple-select-label'>Sort</InputLabel>
@@ -63,8 +80,8 @@ const Sort = () => {
           label='Sort'
           name='sort'
           id='sort'
-          // value={sort}
-          // onChange={updateSort}
+          value={sort}
+          onChange={updateSort}
         >
           <MenuItem value='price-lowest'>price (lowest)</MenuItem>
           <MenuItem value='price-highest'>price (highest)</MenuItem>

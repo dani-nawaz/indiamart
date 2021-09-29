@@ -3,8 +3,15 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import './normalize.css'
+import { FilterProvider } from './context/FilterContext'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(
+  <FilterProvider>
+    <App />
+  </FilterProvider>,
+
+  document.getElementById('root')
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
