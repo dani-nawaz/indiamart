@@ -4,11 +4,15 @@ import './index.css'
 import App from './App'
 import './normalize.css'
 import { FilterProvider } from './context/FilterContext'
+import { AppProvider } from './components/Home/components/context'
 
 ReactDOM.render(
+  <AppProvider>
+
   <FilterProvider>
     <App />
-  </FilterProvider>,
+  </FilterProvider>
+  </AppProvider>,
 
   document.getElementById('root')
 )
