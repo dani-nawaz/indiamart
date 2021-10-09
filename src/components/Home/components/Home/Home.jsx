@@ -14,8 +14,9 @@ import Services from '../services/Services'
 import FeaturedProducts from '../FeaturedProducts/FeaturedProducts'
 const Home = () => {
   return (
-    <AppProvider>
-      <Header />
+  <>
+
+      {/* <Header /> */}
       <Hero />
       <Navbar />
       <Submenu />
@@ -27,7 +28,8 @@ const Home = () => {
       <Services />
       <More />
       <Footer />
-    </AppProvider>
+  </>
+   
   )
 }
 
