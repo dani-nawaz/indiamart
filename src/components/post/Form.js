@@ -1,5 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import { useDispatch, useSelector } from 'react-redux'
+
+import { postReq } from '../../actions/UserActions'
+import { Box } from '@mui/system'
+import { Alert, LinearProgress, Stack } from '@mui/material'
 
 const Wrapper = styled.section`
   .container {
@@ -125,12 +130,39 @@ const Wrapper = styled.section`
     color: #888;
   }
 `
+
 const Form = () => {
+  const [productName, setProductName] = useState('')
+  const [additionalInfo, setAdditionalInfo] = useState('')
+  const [email, setEmail] = useState('')
+  const dispatch = useDispatch()
+  const [phoneNumber, setPhoneNumber] = useState('')
+  const [website, setWebsite] = useState('')
+  const userRegister = useSelector((state) => state.postReq)
+  const { loading, error } = userRegister
+
+  const submitHandler = (e) => {
+    e.preventDefault()
+    dispatch(postReq(productName, additionalInfo, email, phoneNumber, website))
+  }
+
   return (
     <Wrapper>
       <div class='container'>
         <h1 style={{ textAlign: 'center' }}>Requirment Information</h1>
-        <form id='contact' action='' method='post'>
+
+        <form id='contact' onSubmit={submitHandler}>
+          {loading && (
+            <Box sx={{ width: '100%' }}>
+              <LinearProgress />
+            </Box>
+          )}
+
+          {error && (
+            <Stack sx={{ width: '100%' }} spacing={2}>
+              <Alert severity='error'>{error}</Alert>
+            </Stack>
+          )}
           <fieldset>
             <input
               placeholder='Enter Product/ Service Name'
@@ -138,6 +170,8 @@ const Form = () => {
               tabindex='1'
               required
               autofocus
+              value={productName}
+              onChange={(e) => setProductName(e.target.value)}
             />
           </fieldset>
 
@@ -146,6 +180,8 @@ const Form = () => {
               placeholder='Add Additional Info....'
               tabindex='5'
               required
+              value={additionalInfo}
+              onChange={(e) => setAdditionalInfo(e.target.value)}
             ></textarea>
           </fieldset>
           <div>
@@ -160,6 +196,8 @@ const Form = () => {
               type='email'
               tabindex='2'
               required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </fieldset>
           <fieldset>
@@ -168,14 +206,17 @@ const Form = () => {
               type='tel'
               tabindex='3'
               required
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
             />
           </fieldset>
           <fieldset>
             <input
               placeholder='Your Web Site (optional)'
-              type='url'
+              type='text'
               tabindex='4'
-              required
+              value={website}
+              onChange={(e) => setWebsite(e.target.value)}
             />
           </fieldset>
 
