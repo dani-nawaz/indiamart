@@ -14,14 +14,14 @@ const Wrapper = styled.section`
     place-items: center;
     visibility: hidden;
     opacity: 0;
-    z-index: -1;
+    /* z-index: -1; */
     transition: all 250ms ease-in;
     /* transform: scale(0); */
     background: rgba(0, 0, 0, 0.5);
   }
   .sidebar-wrapper.show {
     visibility: visible;
-    z-index: 2;
+    z-index: 18;
     opacity: 1;
 
     /* transform: scale(1); */
@@ -74,12 +74,12 @@ const Wrapper = styled.section`
 `
 export const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext()
-  console.log('sidebar in sidebar', isSidebarOpen)
+  console.log('asd', isSidebarOpen)
   return (
     <Wrapper>
       <aside
         className={`${
-          isSidebarOpen ? 'sidebar-wrapper show' : 'sidebar-wrapper'
+          isSidebarOpen ? 'sidebar-wrapper show ' : 'sidebar-wrapper'
         }`}
       >
         <div className='sidebar'>

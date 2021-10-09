@@ -1,5 +1,4 @@
 import React from 'react'
-import { useGlobalContext } from '../context'
 import styled from 'styled-components'
 const Wrapper = styled.section`
   width: 100%;
@@ -18,10 +17,8 @@ const Wrapper = styled.section`
   }
 `
 const Banner = () => {
-  const { closeSubmenu } = useGlobalContext()
-
   return (
-    <Wrapper className='section' onMouseOver={closeSubmenu}>
+    <Wrapper className='section'>
       <div className='section__center center'>
         <h1>Banner</h1>
       </div>

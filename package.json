@@ -1,6 +1,7 @@
 {
   "name": "indiamart",
   "version": "0.1.0",
+  "proxy": "http://65.0.168.60:5001",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.1",

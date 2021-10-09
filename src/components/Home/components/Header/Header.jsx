@@ -161,7 +161,6 @@ export default function Header({ history }) {
     </Menu>
   )
   const { openSidebar } = useGlobalContext()
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position='static' className='appbar'>
@@ -173,7 +172,7 @@ export default function Header({ history }) {
               color='inherit'
               aria-label='open drawer'
               sx={{ mr: 2 }}
-              onClick={openSidebar}
+              onClick={() => openSidebar(true)}
             >
               <MenuIcon />
             </IconButton>

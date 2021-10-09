@@ -15,6 +15,8 @@ import { Alert, LinearProgress, Stack } from '@mui/material'
 import { Box } from '@mui/system'
 export const SignUpForm = ({ history, location }) => {
   const [name, setName] = useState('')
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
@@ -37,7 +39,7 @@ export const SignUpForm = ({ history, location }) => {
     if (password !== confirmPassword) {
       setMessage('Passwords do not match')
     } else {
-      dispatch(register(name, email, password))
+      dispatch(register(firstName, lastName, email, password))
     }
   }
   return (
@@ -57,9 +59,15 @@ export const SignUpForm = ({ history, location }) => {
         )}
         <Input
           type='text'
-          placeholder='Full Name'
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          placeholder='First Name'
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+        />
+        <Input
+          type='text'
+          placeholder='Last Name'
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
         />
         <Input
           type='email'

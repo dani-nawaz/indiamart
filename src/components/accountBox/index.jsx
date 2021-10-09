@@ -17,7 +17,7 @@ const BoxContainer = styled.div`
   overflow: hidden;
 `
 const MainSection = styled.section`
-  width: 100vw !important;
+  /* width: 100vw !important; */
   height: 100vh;
   /* background-color: #073c56; */
   margin: 0 auto;
